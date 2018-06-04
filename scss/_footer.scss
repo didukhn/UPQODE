@@ -1,0 +1,34 @@
+footer {
+  background-color: #1a1a1a;
+
+  @media screen and (max-width: 612px) {
+    flex-direction: column;
+    align-items: center;
+    
+    .sozial-panel {
+      padding-bottom: 1rem !important;
+    }
+  }
+
+  .footer-copyright {
+    color: #7a7a7a;
+    padding: 1rem 1.4rem;
+    letter-spacing: 1.5px;
+
+  }
+
+  .sozial-panel {
+    a {
+      &::after {
+        margin-right: 101px;
+      }
+
+      margin-left: 1.655rem;
+
+      &:last-of-type {
+        margin-right: 1.3rem;
+      }
+    }
+  }
+
+}

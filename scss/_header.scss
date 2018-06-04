@@ -1,0 +1,63 @@
+body > header {
+  padding: 0;
+  background-color: $body-bg;
+  z-index: 99999;
+  position: fixed;
+  
+  .navbar {
+    @include media-breakpoint-up(lg) { 
+      padding: 0 115px;
+    }
+    
+    @media (min-width: 1230px) {
+      padding: 0 228px;
+    }
+    
+    .navbar-nav {
+      &>li {
+        margin-right: 0px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 27px;
+        
+        @include media-breakpoint-up(lg) { 
+          margin-right: 46px;
+
+          &:last-of-type {
+            margin-right: 41px;
+          }
+        }
+      }
+      
+      input[type="search"] {
+        outline: none;
+        border: 0px solid;
+        border-radius: 0;
+        background-color: rgba(141, 119, 183, 0.2);
+        width: 180px;
+        padding: 8px;
+        
+        &:focus {
+          box-shadow: none;
+        }
+        
+        &+i {
+          right: 27px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  
+  .navbar-brand {
+    font-size: 30px;
+    line-height: 27px;
+    //line-height: 27px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 22px 0 21px 0;;
+    span {
+      margin-left: -5px;
+    }
+  }
+}

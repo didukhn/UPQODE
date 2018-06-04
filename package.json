@@ -1,0 +1,31 @@
+{
+  "name": "nttest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihor-zhvanko/nttest.git"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "Didukh Natalia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ihor-zhvanko/nttest/issues"
+  },
+  "homepage": "https://github.com/ihor-zhvanko/nttest#readme",
+  "devDependencies": {
+    "bootstrap": "^4.1.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-connect": "^5.5.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {}
+}

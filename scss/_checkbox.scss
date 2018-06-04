@@ -1,0 +1,60 @@
+.upquode-checkbox {
+  $checkbox-size: 25px;
+  
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+
+  input {
+    display: inline-block;
+    top:0;
+    left: 0;
+    width: $checkbox-size;
+    height: $checkbox-size;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+
+    &:checked ~ .checkmark {
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $checkbox-size;
+    height: $checkbox-size;
+    background-color: rgba(26, 26, 26, 0);
+    z-index: 0;
+    border: 1px solid #b7b7b7;
+    
+    &::after {
+      content: " ";
+      position: absolute;
+      display: none;
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid #ffff00;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+  }
+
+  &:hover {
+    input ~ .checkmark {
+      background-color: grey;
+    }
+  }
+}

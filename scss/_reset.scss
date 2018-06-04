@@ -1,0 +1,39 @@
+h2 {
+  font: {
+    size: 35px;
+    weight: bold;
+  }
+}
+
+h3 {
+  font: {
+    size: 14px;
+  }
+  color: #999999;
+}
+
+p {
+  font: {
+    size: 14px;
+    weight: normal;
+  }
+}
+
+.header-color {
+  color: #999999;
+}
+
+.progress {
+  height: 4px;
+  
+  background: {
+    color: unset;
+  }
+  border: {
+    radius: unset;
+  }
+  
+  .progress-bar {
+    transition: none;
+  }
+}
